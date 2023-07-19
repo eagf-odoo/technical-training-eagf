@@ -4,8 +4,10 @@
     'description': """Motorcycle Registry
     ============================
     This Module is used to keep track of the Motorcycle Registration and Ownership of each motorcycle of tehe brand""",
+    'license': "OPL-1",
     'author': "eagf",
-    'category': "Kawiil",
     'website': "https://www.github.com/eagf-odoo",
-    'application': True
+    'category': "Kawiil/Kawiil",
+    'depends': ['base'],
+    'application': True,
 }
