@@ -9,5 +9,8 @@
     'website': "https://www.github.com/eagf-odoo",
     'category': "Kawiil/Kawiil",
     'depends': ['base'],
+    'demo': [
+        'demo/registry_demo.xml'
+    ],
     'application': True,
 }
