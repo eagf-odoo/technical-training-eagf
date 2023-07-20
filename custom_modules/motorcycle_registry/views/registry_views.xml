@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="registry_view_form" model="ir.ui.view">
+        <field name="name">registry.view.form</field>
+        <field name="model">motorcycle.registry</field>
+        <field name="arch" type="xml">
+            <form string="Registry View">
+                <header></header>
+                <sheet>
+                    <field name="picture" widget="image" class="oe_avatar" options="{'preview_image': 'image_128'}" />
+                    <div class="oe_title">
+                        <h1>
+                            <field class="text-break" name="registry_number" placeholder="Name" />
+                        </h1>
+                    </div>
+                    <group>
+                        <group>
+                            <separator string="Motorcycle information"></separator>
+                            <field string="Registration date" name="register_date"></field>
+                            <field name="vin"></field>
+                            <field name="current_mileage"></field>
+                            <field name="license_plate"></field>
+                        </group>
+                        <group>
+                            <separator string="Owner Information"></separator>
+                            <field name="first_name"></field>
+                            <field name="last_name"></field>
+                        </group>
+                    </group>
+                    <notebook>
+                        <page string="Related Documents">
+                            <group><field name="certificate_title"></field></group>
+                        </page>
+                    </notebook>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <record id="registry_view_list" model="ir.ui.view">
+        <field name="name">registry.view.list</field>
+        <field name="model">motorcycle.registry</field>
+        <field name="arch" type="xml">
+            <tree string="Registries List">
+                <field name="registry_number"></field>
+                <field name="vin"></field>
+                <field name="license_plate"></field>
+                <field name="first_name"></field>
+                <field name="last_name"></field>
+            </tree>
+        </field>
+    </record>
+
+    <record id="registry_view_search" model="ir.ui.view">
+        <field name="name">registry.view.search</field>
+        <field name="model">motorcycle.registry</field>
+        <field name="arch" type="xml">
+            <search>
+                <field name="registry_number"></field>
+                <field name="vin"></field>
+                <field name="last_name"></field>
+                <field name="license_plate"></field>
+            </search>
+        </field>
+    </record>
+</odoo>

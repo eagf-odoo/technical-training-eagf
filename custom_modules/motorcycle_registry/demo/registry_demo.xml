@@ -6,18 +6,27 @@
             <field name="vin">KAIN220M000234</field>
             <field name="first_name">John</field>
             <field name="last_name">Smith</field>
+            <field name="current_mileage">784.5</field>
+            <field name="license_plate">IEG023</field>
+            <field name="register_date">2021-06-11 19:18:51</field>
         </record>
         <record id="registry_02" model="motorcycle.registry">
             <field name="registry_number">MRN0002</field>
             <field name="vin">KAUK21XL847327</field>
             <field name="first_name">Marie</field>
             <field name="last_name">Turner</field>
+            <field name="current_mileage">239.2</field>
+            <field name="license_plate">OSW652</field>
+            <field name="register_date">2023-07-21 09:12:23</field>
         </record>
         <record id="registry_03" model="motorcycle.registry">
             <field name="registry_number">MRN0003</field>
             <field name="vin">KASK19XL864098</field>
             <field name="first_name">David</field>
             <field name="last_name">Elliot</field>
+            <field name="current_mileage">1050.20</field>
+            <field name="license_plate">OPW913</field>
+            <field name="register_date">2018-05-04 14:47:08</field>
         </record>
     </data>
 </odoo>
